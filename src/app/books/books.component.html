@@ -1,0 +1,19 @@
+<div class="books view indent">
+    <div class="container">
+        <header>
+            <h3>
+                <span class="glyphicon glyphicon-user"></span>
+                {{ title }}
+            </h3>
+        </header>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-default" [routerLink]="['/books', '0']">Add New Book</a>
+            </div>
+        </div>
+    
+        <app-books-grid [books]="books"></app-books-grid>
+          
+    </div>
+</div>
